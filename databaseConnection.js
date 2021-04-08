@@ -2,11 +2,12 @@ const mysql = require('mysql2');
 
 const is_heroku = process.env.IS_HEROKU || false;
 
+//mysql://be84da1b1de2a8:c09c6fb3@us-cdbr-east-03.cleardb.com/heroku_955a7b8e38392a7?reconnect=true
 const dbConfigHeroku = {
 	host: "us-cdbr-east-03.cleardb.com",
-	user: "b1ab7fb2ee03bc",
-	password: "2a484a2d",
-	database: "heroku_3d208ad4bd6f421",
+	user: "be84da1b1de2a8",
+	password: "c09c6fb3",
+	database: "heroku_955a7b8e38392a7",
 	multipleStatements: false,
 	namedPlaceholders: true
 };
@@ -28,4 +29,3 @@ else {
 }
 
 module.exports = database;
-			
